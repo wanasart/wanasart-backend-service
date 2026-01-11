@@ -1,8 +1,8 @@
 import { Router } from "express";
-import menu from "./menu_go_api/routes";
+import menu from "./menu/menu.routes";
 
 const router = Router();
 
-router.use("/menu-go", menu);
+router.use("/menus", menu);
 
 export default router;
