@@ -11,6 +11,7 @@ export const mapMenuToSaveResponse = (row: any): Model.Menu => {
         name: row.mnu_name,
         url: row.mnu_image_url,
         price: row.mnu_price,
+        recommanded: row.mnu_is_recommended,
         created_at: `${createdAt.date} ${createdAt.time}`,
         updated_at: `${updatedAt.date} ${updatedAt.time}`,
         category: {
